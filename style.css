@@ -9,20 +9,10 @@ html, body {
 	font-family:Raleway;
 }
 
-body {
-	overflow: hidden
-}
-
 .comingSoon {
     font-style: oblique;
     font-weight:600;
     font-size:0.7em;
-}
-
-
-.center-vertical {
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .animated {
@@ -75,7 +65,7 @@ body {
 @-webkit-keyframes fadeInUp {
 	0% {
 		opacity: 0;
-		transform: translateY(100%);
+		transform: translateY(60%);
 	}
 	100% {
 		opacity: 1;
@@ -85,7 +75,7 @@ body {
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
-		transform: translateY(100%);
+		transform: translateY(60%);
 	}
 	100% {
 		opacity: 1;
@@ -118,7 +108,9 @@ body {
 }
 
 #header {
-	height: 100%;
+	margin-top:50px;
+	margin-bottom:20px;
+	height:300px;
 }
 
 #header-logo-text {
@@ -254,4 +246,26 @@ body {
 	animation-duration: 500ms;
 	-webkit-animation-name: chevronRightSlide;
 	animation-name: chevronRightSlide;
+}
+
+#c2a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 7.5%;
+}
+
+#c2a a {
+	display: block;
+	height: 100%;
+}
+
+#c2a a:hover {
+	opacity: 0.75;
+}
+
+#c2a img {
+	height: 100%;
+	width: auto;
 }
