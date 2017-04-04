@@ -113,6 +113,12 @@ html, body {
 	height:300px;
 }
 
+#header-logo {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 #header-logo-text {
 	position: relative;
 	overflow: hidden;
@@ -229,6 +235,12 @@ html, body {
 		transform: translateX(0) scaleX(-1);
 	}
 }
+
+.center-vertical {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 
 .chevronLeftSlide {
 	-webkit-animation-delay: 500ms;
