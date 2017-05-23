@@ -25,7 +25,7 @@
 
         <h1 class="text-center animated fadeInUp">
 
-            <a href="https://goo.gl/forms/Jz8rK3TTSKxuVKJi1" class="btn btn-primary btn-lg" role="button">Apply by May 19th!</a>
+            <a href="https://goo.gl/forms/Jz8rK3TTSKxuVKJi1" class="btn btn-primary btn-lg" role="button">Apply by <span id="signupDate"></span>!</a>
         </h1>
 
     </div>
@@ -113,7 +113,26 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <script>
+        function formatDate(date) {
+            date.setDate(date.getDate()+1);
+        var monthNames = [
+        "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+        ];
+
+        var day = date.getDate();
+        var monthIndex = date.getMonth();
+
+        return monthNames[monthIndex] + ' ' + day;
+        }
+
+
+
     window.onload = function() {
+        document.getElementById("signupDate").innerHTML = formatDate(new Date());
+
         const BITS_ID = 'bits';
         const BITS_TEXT = 'bits';
         const BITS_ANIMATE_INTERVAL = 50.0;
